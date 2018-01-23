@@ -67,7 +67,7 @@ function drawCircles() {
     ctx.arc(circle.x, circle.y, circle.radius, 0, Math.PI*2);
     ctx.fillStyle = circle.color;
     ctx.fill();
-	}
+  }
 };
 
 const addCircle = document.querySelector(".circleBtn");
@@ -83,7 +83,7 @@ addCircle.addEventListener("click", function() {
     cancelAnimationFrame(requestCircle);
     moveTriangleBtn.innerHTML = "Moving Triangle";
     cancelAnimationFrame(requestTriangle);
-	}	
+  }	
   addRandomCircle();
 });
 
@@ -118,7 +118,7 @@ function drawSquare() {
 
     ctx.fillStyle = square.color;
     ctx.fillRect(square.x, square.y, square.size, square.size);
-	}
+  }
 };
 
 const addSquare = document.querySelector(".squareBtn");
@@ -134,7 +134,7 @@ addSquare.addEventListener("click", function() {
     cancelAnimationFrame(requestCircle);
     moveTriangleBtn.innerHTML = "Moving Triangle";
     cancelAnimationFrame(requestTriangle);
-	}
+  }
   addRandomSquare();
 });
 
@@ -165,7 +165,7 @@ function drawTriangle() {
     ctx.lineTo(triangle.x, triangle.y);
     ctx.fillStyle = triangle.color;
     ctx.fill();
-	}
+  }
 };
 
 const addTriangle = document.querySelector(".triangleBtn");
@@ -181,7 +181,7 @@ addTriangle.addEventListener("click", function() {
     cancelAnimationFrame(requestCircle);
     moveTriangleBtn.innerHTML = "Moving Triangle";
     cancelAnimationFrame(requestTriangle);
-	}
+  }
   addRandomTriangle();
 });
 
@@ -252,7 +252,7 @@ function movingSquare() {
 
   if (squareX <= 0 || squareX + squareSize >= cw) {
     squareSpeedX = -squareSpeedX;
-	}
+  }
   if (squareY <= 0 || squareY + squareSize >= ch) {
     squareSpeedY = -squareSpeedY;
   }
