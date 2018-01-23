@@ -1,0 +1,45 @@
+*,
+:before,
+:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  height: 100vh;
+  outline: 1px solid red;
+  background-color: #A7A7A7;
+}
+canvas {
+  border: 3px solid #fff;
+  display: block;
+  margin: auto;
+  margin: auto;
+}
+.allButtons {
+  height: 50px;
+  width: 800px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Btn {
+  display: inline-block;
+  height: 40px;
+  width: 80px;
+  cursor: pointer;
+  background-color: #00E0F0;
+  border: 1px solid #00E0F0;
+  outline: none;
+  margin: 2px auto;
+}
+.clearBtn {
+  background-color: #FF3333;
+}
+.Btn:hover {
+  border: 1px solid #0060FF;
+}
